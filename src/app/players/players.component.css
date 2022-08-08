@@ -10,3 +10,11 @@ tr {
   border-style: none !important;
   border-color: white;
 }
+@media only screen and (max-width: 768px) {
+  nav {
+    margin-bottom: 2%;
+  }
+  .container {
+    margin-top: 12%;
+  }
+}

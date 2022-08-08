@@ -4,3 +4,11 @@
 .card-header {
   background-color: #afcee9;
 }
+@media only screen and (max-width: 768px) {
+  nav {
+    margin-bottom: 2%;
+  }
+  .container {
+    margin-top: 12%;
+  }
+}

@@ -28,3 +28,11 @@ p:hover {
   color: #fff;
   background-color: #31c9fc;
 }
+@media only screen and (max-width: 768px) {
+  nav {
+    margin-bottom: 2%;
+  }
+  .container {
+    margin-top: 12%;
+  }
+}
