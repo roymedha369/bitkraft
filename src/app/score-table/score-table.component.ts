@@ -34,10 +34,6 @@ export class ScoreTableComponent implements OnInit {
       this.sortedKeys = Object.keys(tempScores).sort(function (a, b) {
         return tempScores[b].score - tempScores[a].score;
       });
-      console.log(this.sortedKeys);
-    });
-    this.sortedKeys.forEach((element) => {
-      console.log(this.scores[element]);
     });
   }
 }
