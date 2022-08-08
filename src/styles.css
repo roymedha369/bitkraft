@@ -11,3 +11,9 @@ body {
 .container {
   flex-direction: column;
 }
+.card {
+  margin-bottom: 1em;
+  margin-top: 1em;
+  width: 100%;
+  height: auto;
+}
