@@ -1,0 +1,12 @@
+.container {
+  margin-top: 3.5%;
+}
+img {
+  height: 200px;
+  width: 200px;
+  margin: auto;
+}
+tr {
+  border-style: none !important;
+  border-color: white;
+}

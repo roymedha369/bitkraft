@@ -1,0 +1,51 @@
+<div class="container">
+  <nav class="navbar navbar-light" style="background-color: #e3f2fd">
+    <div class="container-fluid">
+      <span class="navbar-brand mb-0 h1"><div>Player Profiles</div></span>
+    </div>
+  </nav>
+  <div class="row modal-row">
+    <div
+      class="col-sm-4 col-lg-4 col-md-4 col-lg-offset-1 col-md-offset-1 col-sm-offset-1"
+      *ngFor="let player of playersList"
+      [hidden]="!playersList"
+    >
+      <div class="card card-block m-lg-1 m-md-1">
+        <img
+          class="card-img-top text-center"
+          [src]="player.playerImg"
+          alt="Player image"
+        />
+        <div class="card-body">
+          <h4 class="card-title">
+            {{ player.name }}<span> {{ player.role }}</span>
+          </h4>
+
+          <div class="container-fluid">
+            <table class="table">
+              <tbody>
+                <tr>
+                  <td>Country</td>
+                  <td>{{ player.country }}</td>
+                </tr>
+                <tr>
+                  <td>Batting Style</td>
+                  <td>{{ player.battingStyle }}</td>
+                </tr>
+                <tr>
+                  <td>Bowling Style</td>
+                  <td>{{ player.bowlingStyle }}</td>
+                </tr>
+
+                <tr>
+                  <td>Date of Birth</td>
+                  <td>{{ player.dateOfBirth | date: "mediumDate" }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

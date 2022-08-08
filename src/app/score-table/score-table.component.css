@@ -1,0 +1,11 @@
+.container {
+  margin-top: 3.5%;
+}
+img {
+  height: 60px;
+  aspect-ratio: auto 60 / 60;
+  width: 60px;
+}
+.table {
+  margin-top: 3%;
+}

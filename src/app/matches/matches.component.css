@@ -1,0 +1,49 @@
+.container {
+  margin-top: 3.5%;
+}
+.card {
+  margin-bottom: 1em;
+  margin-top: 1em;
+  width: 100%;
+  height: auto;
+}
+.time-font {
+  font-size: smaller;
+}
+.time {
+  float: right;
+}
+img {
+  height: 48px;
+  aspect-ratio: auto 48 / 48;
+  width: 48px;
+}
+.close {
+  border: none;
+  background-color: white;
+}
+.details-row {
+  color: darkgrey;
+  font-size: small;
+}
+.row-margin {
+  margin-top: 3%;
+}
+.text-right {
+  text-align: right;
+}
+.modal-header {
+  border-bottom: none;
+}
+.modal-body {
+  margin-top: -6%;
+}
+.middle-text {
+  margin-top: 5%;
+}
+.modal-backdrop.fade {
+  opacity: 0.5 !important;
+}
+.fade.in {
+  opacity: 1 !important;
+}

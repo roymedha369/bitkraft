@@ -1,0 +1,30 @@
+.container {
+  margin-top: 3.5%;
+}
+img {
+  height: 60px;
+  aspect-ratio: auto 60 / 60;
+  width: 60px;
+  margin-top: 5%;
+}
+p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: rgb(20, 133, 240);
+  font-weight: bold;
+}
+.card {
+  background: linear-gradient(
+    90deg,
+    rgb(250 250 253) 0%,
+    rgb(227 237 239 / 44%) 0%,
+    rgba(34, 193, 226, 0.6166841736694677) 100%
+  );
+  width: 50%;
+  height: 50%;
+}
+.team {
+  border: none;
+  color: #fff;
+  background-color: #31c9fc;
+}

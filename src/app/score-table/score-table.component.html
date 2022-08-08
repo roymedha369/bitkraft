@@ -1,0 +1,53 @@
+<div class="container">
+  <nav class="navbar navbar-light" style="background-color: #e3f2fd">
+    <div class="container-fluid">
+      <span class="navbar-brand mb-0 h1"
+        ><div>Tournament Score Table</div></span
+      >
+    </div>
+  </nav>
+  <div>
+    <table class="table table-striped table-bordered">
+      <thead>
+        <tr class="text-center">
+          <td>Position</td>
+          <td>Team</td>
+          <td>Matches</td>
+          <td>Score</td>
+        </tr>
+      </thead>
+      <tbody>
+        <ng-container
+          *ngFor="let country of sortedKeys | keyvalue; let i = index"
+        >
+          <tr>
+            <td>{{ i + 1 }}</td>
+            <td>
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-lg-4">
+                    <img
+                      [alt]="scores[country.value].name"
+                      [id]="scores[country.value].name"
+                      [src]="scores[country.value].flag"
+                      class="rounded"
+                    />
+                  </div>
+                  <div class="col-lg-8">
+                    {{ scores[country.value].name }}
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td>
+              {{ scores[country.value].matches }}
+            </td>
+            <td>
+              {{ scores[country.value].score }}
+            </td>
+          </tr>
+        </ng-container>
+      </tbody>
+    </table>
+  </div>
+</div>
